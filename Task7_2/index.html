@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4SectionTask</title>
+    <link rel="stylesheet" href="./assist/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+   
+    <section class="first">
+      <div class="gallery-container">
+        <div class="main-display">
+            <div class="text">
+                <h1>iPhone 13 Pro Max</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod suscipit sapiente at aliquid nisi voluptatum.</p>
+            </div>
+            <img id="main-image" src="./assist/IMG/blue.png" alt="Main Display">
+        </div>
+        <div class="thumbnails">
+            <img onclick="changeImage('white', '#c0392b')" src="./assist/IMG/white.png" alt="Gold">
+            <img onclick="changeImage('blue', '#3498db')" src="./assist/IMG/blue.png" alt="Blue">
+            <img onclick="changeImage('white', '#2c3e50')" src="./assist/IMG/white.png"alt="Black">
+            <img onclick="changeImage('blue', '#ecf0f1')" src="./assist/IMG/blue.png" alt="White">
+            <img onclick="changeImage('white', '#e74c3c')" src="./assist/IMG/white.png" alt="Red">
+        </div>
+    </div>
+      
+    </section>
+
+    <section class="second">
+      <div class="borderBox">
+        <i
+          class="fa-solid fa-moon fa-rotate-by"
+          style="--fa-rotate-angle: 230deg"
+          onclick="toggleDarkMode()"
+        ></i>
+        <h1>Hello World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          quisquam iure rem, odit minus reprehenderit sequi perferendis nulla
+          veritatis hic praesentium incidunt animi non ut sed eius at laboriosam
+          delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Doloribus quisquam iure rem, odit minus reprehenderit sequi
+          perferendis nulla veritatis hic praesentium incidunt animi non ut sed
+          eius at laboriosam delectus?Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Doloribus quisquam iure rem, odit minus
+          reprehenderit sequi perferendis nulla veritatis hic praesentium
+          incidunt animi non ut sed eius at laboriosam delectus?
+        </p>
+      </div>
+    </section>
+
+    <section class="accordionSection">
+      <ul class="accordion">
+        <li>
+          <div class="question">
+            How many team members can I invite?
+            <i class="fa-solid fa-chevron-down" style="color: #c3c6d1"></i>
+          </div>
+          <div class="answer">You can invite 5 to 7 team members.</div>
+        </li>
+        <li>
+          <div class="question">
+            What is the maximum file upload size?
+            <i class="fa-solid fa-chevron-down" style="color: #c3c6d1"></i>
+          </div>
+          <div class="answer">The maximum file upload size is 4 Gbytes.</div>
+        </li>
+        <li>
+          <div class="question">
+            How do I reset my password?
+            <i class="fa-solid fa-chevron-down" style="color: #c3c6d1"></i>
+          </div>
+          <div class="answer">
+            To reset your password, click on "Forget my password" and follow the
+            instructions provided.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="RatingStars">
+      <h3>How was your experience?</h3>
+      <div class="rating">
+        <i  class="star fa-solid fa-star"onclick="Rating(this)"></i>
+        <i  class="star fa-solid fa-star"onclick="Rating(this)"></i>
+        <i  class="star fa-solid fa-star"onclick="Rating(this)"></i>
+        <i  class="star fa-solid fa-star"onclick="Rating(this)"></i>
+        <i  class="star fa-solid fa-star"onclick="Rating(this)"></i>
+      </div>
+      <p></p>
+    </section>
+
+    <script src="./assist/JS/script.js"></script>
+  </body>
+</html>
+
+    
+    
